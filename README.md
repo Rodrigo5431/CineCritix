@@ -17,11 +17,7 @@ Bem-vindo ao CineCritix! Uma plataforma desenvolvida para compartilhar e descobr
 ## 🎨 Funcionalidades
 ✅ **Avaliação de Filmes e Séries** - Compartilhe suas opiniões e descubra novas recomendações.
 
-✅ **Modo Escuro/Claro** - Alternância entre temas para melhor experiência do usuário.
-
 ✅ **Sistema de Comentários** - Interaja com outros usuários e troque ideias sobre conteúdos.
-
-✅ **Ranking de Filmes e Séries** - Veja quais títulos estão em alta na comunidade.
 
 ✅ **Perfis Personalizados** - Cada usuário tem um perfil para gerenciar suas avaliações e preferências.
 
@@ -52,6 +48,7 @@ O site estará disponível em http://localhost:5173/ 🚀
 2️⃣ Instale as dependências:
 ```bash
   cd CineCritix_BACK-END
+  cd ccx
   mvn clean install
 ```
 3️⃣ Configure o banco de dados e variáveis de ambiente:
