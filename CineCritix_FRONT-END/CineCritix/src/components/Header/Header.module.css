@@ -1,0 +1,108 @@
+.header {
+  display: flex;
+  height: 11rem;
+  width: 100%;
+  background: linear-gradient(to bottom, #3152b7 93%, #ffffff 7%);
+  position: relative;
+}
+
+.navigation {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 11rem;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.navigation h1 {
+  cursor: pointer;
+}
+
+.navItem {
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px 30px 0px 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navItem:hover {
+  opacity: 0.7;
+}
+
+.active {
+  background-color: #ffffff;
+  color: #3152b7;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.searchInput {
+  all: unset;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  background-color: #fff;
+  width: 47rem;
+  height: 1rem;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-size: 20px;
+  color: black;
+}
+
+.searchIcon {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 24%;
+  color: rgba(0, 0, 0, 0.7);
+  left: 22rem;
+}
+
+.position {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  position: relative;
+}
+
+@media (max-width: 769px) {
+  .logo {
+    position: absolute;
+    top: 0% !important;
+    left: 3%;
+    width: 25% !important;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 9999;
+  }
+}
+
+@media (max-width: 590px) {
+  .logo {
+    top: 13% !important;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 0%;
+  left: 3%;
+  width: 10rem;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.logo:hover {
+  opacity: 0.7;
+  z-index: 9999;
+}
+
+.logo:active {
+  z-index: 9999;
+}

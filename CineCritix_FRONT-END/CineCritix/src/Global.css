@@ -1,0 +1,18 @@
+:root {
+  --azul: #3152b7;
+  --preto: #000;
+  --branco: #fff;
+  --cinza: #999;
+  --amarelo: #ffd700;
+  --or: rgba(255,255,255,0.4)
+}
+
+a {
+  text-decoration: none;
+  color: #1877f2;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #62a2f7;
+}

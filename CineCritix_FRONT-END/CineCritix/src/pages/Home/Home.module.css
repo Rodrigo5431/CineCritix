@@ -1,0 +1,399 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  color: #fff;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 11rem;
+  color: #fff;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation {
+  display: flex;
+  position: absolute;
+  width: 50%;
+  height: 11rem;
+  align-items: end;
+  justify-content: space-around;
+  font-weight: 900;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.navigation h2:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
+  transition: 0.3s;
+}
+
+.active {
+  background-color: #fff;
+  padding: 0px 30px;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.active h2 {
+  color: #3152b7;
+}
+
+.positionEmBreve{
+  position: relative;
+}
+
+.emBreve {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: red;
+  width: 110%;
+  height: 20px;
+  font-size: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(136, 136, 136);
+}
+
+.swiperContainer {
+  width: 70%;
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+}
+
+.poster {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+@media (max-width: 1080px) {
+  .poster {
+    height: 40vh;
+  }
+
+  .swiperContainer h2 {
+    display: none;
+  }
+
+  .card h4 {
+    display: none;
+  }
+
+  .card::before {
+    display: none;
+  }
+
+  .positionSearch {
+    width: 80%;
+    margin-left: 20%;
+  }
+}
+
+.contain {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.card {
+  display: flex;
+  width: 18%;
+  position: relative;
+  transition: 0.3s;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px -70px 90px rgba(0, 0, 0, 1);
+  pointer-events: none;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.title {
+  position: absolute;
+  bottom: -10px;
+  left: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+  text-shadow: 0px 0px 90px 10px rgba(0, 0, 0, 0.9);
+}
+
+.card:hover .title {
+  bottom: 5px;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.positionSearch {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  all: unset;
+  position: relative;
+  width: 55%;
+  /* height: 18%; */
+  border-radius: 40px;
+  margin-bottom: 50px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  color: #000;
+  z-index: 9999;
+}
+
+.searchButton {
+  all: unset;
+  position: absolute;
+  right: 22%;
+  top: 14%;
+  color: #000;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.noResults {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pipoca {
+  width: 35%;
+  height: auto;
+}
+
+.text {
+  font-size: 40px;
+  width: 20%;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.pageButton {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.pageButton:disabled {
+  background-color: #222;
+  cursor: not-allowed;
+}
+
+.pageButton.active {
+  background-color: white;
+  color: black;
+}
+
+.pageButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.pageButton2 {
+  all: unset;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.pageButton2:hover {
+  transform: scale(1.5);
+}
+
+.pageButton2:disabled {
+  color: #000;
+}
+
+.menu{
+  position: relative;
+  bottom: 50%;
+
+  &:hover{
+    cursor: pointer;
+    color: #fff;
+  }
+}
+
+@media (max-width: 769px){
+  .header{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .pagination {
+    gap: 4px;
+    transform: scale(0.8);
+  }
+
+  .pageButton {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .pageButton2 {
+    font-size: 0.9rem;
+  }
+
+  .positionSearch {
+    margin-top: 50px;
+    margin-left: 0;
+    justify-content: end;
+    margin-right: 40px;
+  }
+
+  .searchButton {
+    right: 5%;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .noResults {
+    transform: scale(0.5);
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+  }
+
+  .pipoca {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 430px) {
+  .poster {
+    height: 25vh;
+    width: 100%;
+  }
+
+  .pagination {
+    gap: 2px;
+  }
+
+  .pageButton {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .pageButton2 {
+    font-size: 0.8rem;
+  }
+
+  .positionSearch {
+    margin-left: 0;
+    justify-content: end;
+    margin-right: 40px;
+  }
+
+  .searchButton {
+    right: 5%;
+  }
+
+  .card {
+    width: 35%;
+  }
+
+  .noResults {
+    transform: scale(0.5);
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+  }
+
+  .pipoca {
+    width: 100%;
+  }
+}
+

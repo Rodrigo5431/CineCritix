@@ -1,0 +1,425 @@
+.backdrop {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 11rem;
+  color: #fff;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation {
+  display: flex;
+  position: absolute;
+  width: 50%;
+  height: 11rem;
+  align-items: end;
+  justify-content: space-around;
+  font-weight: 900;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.navigation h2:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
+  transition: 0.3s;
+}
+
+.active {
+  background-color: #fff;
+  padding: 0px 30px;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.active h2{
+  color: #3152B7;
+}
+
+.backdrop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(0.2);
+  z-index: 1;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  /* border: 3px solid #fff; */
+  z-index: 2;
+  display: flex;
+  position: relative;
+}
+
+.movie {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  width: 30%;
+  height: 100%;
+  /* border: 3px solid #fff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 9; */
+  width: 63%;
+  height: 100vh;
+  color: #fff;
+  /* border: 3px solid #fff; */
+}
+
+.poster {
+  width: 75%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 70%;
+  /* border: 3px solid #fff; */
+  position: absolute;
+  top: 5rem;
+}
+
+button, a {
+  all: unset;
+}
+
+.trailer {
+  all: unset;
+  width: 75%;
+  height: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #fff;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.trailer:hover {
+  box-shadow: 0px 0px 8px #fff;
+  transform: scale(1.02);
+  color: #000;
+}
+
+.positionStar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -5px;
+}
+
+.positionStar h1 {
+  margin-top: -5px;
+}
+
+.position {
+  width: 60%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+  /* border: 3px solid #fff; */
+}
+
+.stars {
+  display: flex;
+  margin-top: 1.9rem;
+}
+
+hr {
+  width: 165%;
+  border: 1px solid #6e6e6e;
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  gap: 20px 0px;
+  /* border: 3px solid #fff; */
+}
+
+.castContainer {
+  width: 60%;
+  max-width: 60%;
+  /* border: 3px solid #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px ;
+}
+
+.actor img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.actorName {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.actor img:hover {
+  box-shadow: 0px 0px 40px #3152B7;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.actor a:hover {
+  all: unset;
+}
+
+.space {
+  width: 170%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.feedbackArea {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  /* border: 3px solid #fff; */
+}
+
+.titleFeedback{
+  margin-top: 100px;
+}
+
+.textarea {
+  all: unset;
+  width: 70%;
+  height: 40vh;
+  resize: none;
+  padding: 20px;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.button {
+  all: unset;
+  width: 30%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 10px #fff;
+  transform: scale(1.02);
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.comentarios {
+  /* border: 3px solid #fff; */
+  width: 80%;
+  margin-top: 80px;
+  border-radius: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.comentarioCard {
+  position: relative;
+  width: 90%;
+  display: flex;
+  gap: 20px;
+  margin-top: 60px;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.comentarioCard:hover {
+  border-bottom: 1px solid #fff;
+  transform: scale(1.01);
+
+}
+
+.avataroto {
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.starsAvaliation {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-top: -10px;
+}
+
+.nota {
+  margin-bottom: 0px;
+}
+
+.trash {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.trash:hover {
+  box-shadow: 0px 0px 10px red;
+  transform: scale(1.1);
+}
+
+@media (max-width: 769px) {
+  .box {
+    flex-direction: column;
+  }
+
+  .movie{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+  }
+
+  .poster {
+    width: 70%;
+  }
+
+  .trailer {
+    width: 70%;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .info {
+    transform: scale(0.8);
+    width: 100%;
+    /* border: 3px solid #fff; */
+  }
+
+  .line {
+    /* border: 3px solid #fff; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .line h2 {
+    align-items: start;
+    text-align: start;
+  }
+
+  .contain {
+    /* display: none; */
+    position: relative;
+    margin-top: 700px;
+  }
+}
+
+@media (max-width: 430px) {
+ .feedbackArea {
+  transform: scale(0.8);
+ }
+
+ .button {
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+ }
+
+ .backdrop {
+  
+ }
+}

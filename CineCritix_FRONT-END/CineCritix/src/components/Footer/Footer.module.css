@@ -1,0 +1,143 @@
+.footer {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D0D0D;
+    position: relative;
+    color: #fff;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: #3152B7;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    position: absolute;
+    bottom: -20px;
+}
+
+.line a {
+    all: unset;
+    cursor: pointer;
+}
+
+.line a:hover {
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+}
+
+.positionUser {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.user {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    width: 12rem;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.icon {
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.3s;
+}
+
+.icon:active {
+    background-color: #fff;
+    color: #000;
+    transform: scale(0.9);
+}
+
+.footer h3 {
+    font-weight: 500;
+}
+
+.title {
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1080px) {
+    .positionUser {
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .title {
+        margin-top: 40px;
+    }
+    
+    .contact {
+        margin-bottom: 80px;
+    }
+
+    .line {
+        flex-wrap: wrap;
+        height: auto;
+    }
+}
+
+@media (max-width: 430px) {
+    .positionUser{
+        transform: scale(0.7);
+    }
+
+    .title {
+        transform: scale(0.7);
+        margin-bottom: -40px;
+    }
+    
+    .contact {
+        transform: scale(0.7);
+        margin-top: -50px;
+    }
+    
+    .line {
+        font-size: 12px;
+        padding: 10px;
+        width: 94%;
+    }
+}
